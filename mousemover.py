@@ -20,7 +20,7 @@ def cond():
         curpos = win32api.GetCursorPos()
         if savedpos == curpos:
             savedpos = curpos
-            print("Cursor is on this position for" (count+1)/2, " seconds.")
+            print("Cursor is on this position for" ,(count+1)/2, " seconds.")
             count += 1
             if count >= 20:  # if count is greater than 60 it means timeout will occur after mouse is steady for more than
                 # 240 seconds i.e. 4 minutes. (approx.)

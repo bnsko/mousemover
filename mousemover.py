@@ -6,9 +6,9 @@ savedpos = win32api.GetCursorPos()
 def actions():
     print(gui.size())
     while True:
-        gui.move(0, 3)
-        sleep(0.5)
-        gui.move(4, 0)
+        gui.move(0, 1)
+        sleep(0.2)
+        gui.move(2, 0)
         cond()
 
 
@@ -22,7 +22,7 @@ def cond():
             savedpos = curpos
             print("Cursor is on this position for" ,(count+1)/2, " seconds.")
             count += 1
-            if count >= 300:
+            if count >= 300: 
                 print("You are AFK for 5 minutes, moving cursor for few pixels")
                 actions()
                 break

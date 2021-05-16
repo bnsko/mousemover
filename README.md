@@ -1,2 +1,2 @@
 # mousemover
-Move mouse every 5 minutes
+Move mouse every 4 minutes

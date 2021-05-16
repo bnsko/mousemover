@@ -8,7 +8,7 @@ def actions():
     while True:
         gui.move(0, 3)
         sleep(0.5)
-        gui.move(0, 5)
+        gui.move(4, 0)
         cond()
 
 

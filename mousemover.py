@@ -8,10 +8,9 @@ def eksn():
         gui.move(2, 2)
         sleep(0.2)
         gui.move(-2, -2)
-        cond()
+        nomove()
 
-
-def cond():
+def nomove():
     count = 0
     while True:
         savedpos = win32api.GetCursorPos()
@@ -31,4 +30,4 @@ def cond():
             print("Mouse is currently moving")
             count = 0
 
-cond()
+nomove()

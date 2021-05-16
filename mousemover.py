@@ -22,7 +22,7 @@ def cond():
             savedpos = curpos
             print("Cursor is on this position for" ,(count+1)/2, " seconds.")
             count += 1
-            if count >= 240: 
+            if count >= 480: 
                 print("You are AFK for 4 minutes, moving cursor for few pixels")
                 actions()
                 break

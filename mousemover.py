@@ -3,12 +3,11 @@ import win32api
 from time import sleep
 savedpos = win32api.GetCursorPos()
 
-def actions():
-    print(gui.size())
+def eksn():
     while True:
-        gui.move(0, 1)
+        gui.move(2, 2)
         sleep(0.2)
-        gui.move(2, 0)
+        gui.move(-2, -2)
         cond()
 
 
@@ -16,15 +15,15 @@ def cond():
     count = 0
     while True:
         savedpos = win32api.GetCursorPos()
-        sleep(0.5)
+        sleep(1)
         curpos = win32api.GetCursorPos()
         if savedpos == curpos:
             savedpos = curpos
-            print("Cursor is on this position for" ,(count+1)/2, " seconds.")
+            print("You did not moved with cursor for" ,(count+1), " seconds.")
             count += 1
-            if count >= 480: 
+            if count >= 240: 
                 print("You are AFK for 4 minutes, moving cursor for few pixels")
-                actions()
+                eksn()
                 break
             else:
                 pass

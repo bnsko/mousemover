@@ -23,7 +23,7 @@ def donotmove():
             save_pos = current_pos
             print("You did not move the cursor for" ,(count+1), " seconds.")
             count += 1
-            if count >= 5: 
+            if count >= 240: 
                 print("You are AFK for 4 minutes, moving cursor for few pixels.")
                 eksn()
                 break

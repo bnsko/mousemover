@@ -1,2 +1,3 @@
 # mousemover
-Move mouse every 4 minutes
+
+Simple mouse move python script which moves mouse every 4 minutes
